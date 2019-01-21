@@ -83,11 +83,11 @@ class AppFrame extends JFrame{
             }
 
             togglePlayer();
-            menuBarActionHandler(e);
+            menuBarActionHandler();
         }
     }
 
-    private void menuBarActionHandler(ActionEvent e) {
+    private void menuBarActionHandler() {
         newGame.addActionListener(event -> resetBoard());
         quit.addActionListener(event -> System.exit(0));
     }
